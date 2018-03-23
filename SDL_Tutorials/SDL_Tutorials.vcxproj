@@ -125,7 +125,12 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Resources\down.bmp" />
     <Image Include="Resources\hello_world.bmp" />
+    <Image Include="Resources\left.bmp" />
+    <Image Include="Resources\press.bmp" />
+    <Image Include="Resources\right.bmp" />
+    <Image Include="Resources\up.bmp" />
     <Image Include="Resources\x.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
