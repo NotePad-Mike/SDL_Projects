@@ -126,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\hello_world.bmp" />
+    <Image Include="Resources\x.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

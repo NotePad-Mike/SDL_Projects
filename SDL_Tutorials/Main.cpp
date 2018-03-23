@@ -61,7 +61,7 @@ bool loadMedia()
 	bool success = true;
 
 	//Load splash image
-	gHelloWorld = SDL_LoadBMP("Resources/hello_world.bmp");
+	gHelloWorld = SDL_LoadBMP("Resources/x.bmp");
 	if (gHelloWorld == NULL)
 	{
 		printf("Unable to load image! SDL_Error: %s\n", SDL_GetError());
@@ -104,14 +104,29 @@ int main(int argc, char* args[])
 		}
 		else
 		{
-			//Apply the image
-			SDL_BlitSurface(gHelloWorld, NULL, gScreenSurface, NULL);
+			//Main loop flag
+			bool quit = false;
 
-			//Update the surface
-			SDL_UpdateWindowSurface(gWindow);
+			//Event handler
+			SDL_Event e;
 
-			//Wait two seconds
-			SDL_Delay(2000);
+			while (!quit)
+			{
+				//Handle events on the queue
+				while (SDL_PollEvent(&e) != 0)
+				{
+					//User requests quit
+					if (e.type == SDL_QUIT)
+					{
+						quit = true;
+					}
+				}
+				//Apply the image
+				SDL_BlitSurface(gHelloWorld, NULL, gScreenSurface, NULL);
+
+				//Update the surface
+				SDL_UpdateWindowSurface(gWindow);
+			}
 		}
 	}
 

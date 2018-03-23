@@ -23,5 +23,8 @@
     <Image Include="Resources\hello_world.bmp">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Resources\x.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
