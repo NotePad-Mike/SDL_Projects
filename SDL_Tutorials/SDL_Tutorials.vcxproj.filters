@@ -41,5 +41,8 @@
     <Image Include="Resources\up.bmp">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Resources\stretch.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

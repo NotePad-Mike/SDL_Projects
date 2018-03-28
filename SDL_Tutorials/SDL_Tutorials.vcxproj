@@ -130,6 +130,7 @@
     <Image Include="Resources\left.bmp" />
     <Image Include="Resources\press.bmp" />
     <Image Include="Resources\right.bmp" />
+    <Image Include="Resources\stretch.bmp" />
     <Image Include="Resources\up.bmp" />
     <Image Include="Resources\x.bmp" />
   </ItemGroup>
